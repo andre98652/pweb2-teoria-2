@@ -1,3 +1,15 @@
 body{
     background-color: rgb(47, 47, 166);
 }
+.cuadro{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(217, 55, 55);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
