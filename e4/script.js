@@ -6,7 +6,10 @@ invertir.addEventListener('click', function(){
     let expresion= '';
 
 
-
+    const url = "https://meet.google.com/tia-hpct-qxx?authuser=1";
+    const regex = /\/([\w-]+)\?/;
+    const match = url.match(regex);
+    const meetCode = match ? match[1] : null;
 
 
 
