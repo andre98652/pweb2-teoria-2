@@ -1,9 +1,17 @@
-let a=new Date().getDay();
+const invertir = document.getElementById('invertButton');
+const text = document.getElementById('inputText');
+const invertText=document.getElementById('invertedText');
+invertir.addEventListener('click', function(){
+    let palabra=text.value;
+    let palabraF= '';
 
-let dias=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+    for(let i=palabra.length -1; i>=0; i--){
+        palabraF+=palabra[i];
+    }
+    invertir.classList.add('hidden');
+    text.classList.add('hidden');
 
-let text="El dia es: "+dias[a];
+    invertText.style.fontSize="24px";
+    invertText.textContent=palabraF;
 
-let div= document.getElementById("text");
-div.style.fontSize="24px";
-div.innerHTML=text;
+});
